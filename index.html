@@ -10,6 +10,12 @@
     <title>NLW eSports</title>
 
     <link rel="stylesheet" href="./styles.css">
+
+      <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
   </head>
   <body>
 
@@ -27,32 +33,40 @@
           <h2>Meus Jogos</h2>
           <p>Os games que eu mais curto jogar!</p>
 
-          <ul class="games-list">
-            <li>
-              <a 
-              target="_blank"
-              href="https://www.twitch.tv/directory/game/Legends%20of%20Runeterra"><img src="https://static-cdn.jtvnw.net/ttv-boxart/514790-285x380.jpg" alt="Imagem do jogo legends of runeterra"></a>
-            </li>
+          <div class="swiper mySwiper">
 
-            <li>
-              <a 
-              target="_blank"
-              href="https://www.twitch.tv/directory/game/Street%20Fighter%20V"><img src="https://static-cdn.jtvnw.net/ttv-boxart/488615-285x380.jpg" alt="Imagem do jogo street fighter 5"></a>
-            </li>
+            <ul class="games-list swiper-wrapper">
+              <li class="swiper-slide
+              ">
+                <a 
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/Legends%20of%20Runeterra"><img src="https://static-cdn.jtvnw.net/ttv-boxart/514790-285x380.jpg" alt="Imagem do jogo legends of runeterra"></a>
+              </li>
 
-            <li>
-              <a 
-              target="_blank"
-              href="https://www.twitch.tv/directory/game/Paladins"><img src="https://static-cdn.jtvnw.net/ttv-boxart/491115-285x380.jpg" alt="Imagem do jogo paladins"></a>
-            </li>
+              <li class="swiper-slide
+              ">
+                <a 
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/Street%20Fighter%20V"><img src="https://static-cdn.jtvnw.net/ttv-boxart/488615-285x380.jpg" alt="Imagem do jogo street fighter 5"></a>
+              </li>
 
-            <li>
-              <a 
-              target="_blank"
-              href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V"><img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="Imagem do jogo GTA V"></a>
-            </li>
-          </ul>
-          </ul>
+              <li class="swiper-slide
+              ">
+                <a 
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/Paladins"><img src="https://static-cdn.jtvnw.net/ttv-boxart/491115-285x380.jpg" alt="Imagem do jogo paladins"></a>
+              </li>
+
+              <li class="swiper-slide
+              ">
+                <a 
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V"><img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="Imagem do jogo GTA V"></a>
+              </li>
+            </ul>
+            
+        </div>
+          
         </div>
       </section>
 
@@ -145,6 +159,15 @@
       </section>
       
     </main>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+        <!-- Initialize Swiper -->
+        <script>
+          new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            loop: true
+          });
+        </script>
   </body>
 </html>

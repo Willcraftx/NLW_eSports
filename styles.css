@@ -49,7 +49,7 @@ header img {
 }
 
 main {
-  max-width: 580px;
+  max-width: 360px;
   width: 90%;
   margin: 32px auto;
 
@@ -153,6 +153,14 @@ main section:nth-child(3) {
     transform: translateY(0);
   }
 }
+ /* swiper   */
+  section {
+    overflow: hidden;
+  }
 
+  section ul {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 
 
